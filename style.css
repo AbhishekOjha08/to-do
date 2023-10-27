@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 520px;
+    min-width: 520px;
+}
+
+.heading{
+    display: flex;
+}
+
+.heading p{
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.heading img{
+    width: 7%;
+}
+
+.search{
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.search input{
+    margin-top: 20px;
+    background-color: #eaedee;
+    border-radius: 30px;
+    width: 400px;
+    outline: none;
+    border: none;
+    padding: 20px 40px 20px 20px;
+    font-weight: 500;
+}
+
+.search button{
+    margin-top: 20px;
+    padding:18px 45px;
+    color: #fff;
+    background-color: #ff7344;
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    left: 400px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+ul li{
+    list-style: none;
+    font-size: 16px;
+    padding: 14px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    left: 220px;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('images/unchecked.png');
+    background-size: cover;
+    background-position: center;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background: url('images/checked.png');
+}
